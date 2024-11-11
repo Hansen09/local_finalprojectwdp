@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<!--HOME PAGE-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+    <style>
+      .navbar {
+        height: 100px; padding-left: 100px; padding-right: 100px;
+      }
+      .nav-item {
+        margin: 20px;
+      }
+      .carousel-item {
+        height: 750px;
+      }
+      .container {
+        text-align: center;
+      }
+      .container-text {
+        padding: 10px;
+      }
+      .card {
+        padding: 15px;
+        margin: auto;
+        width: 300px;
+        height: 400px;
+      }
+      .footer-img {
+        width: 200px;
+        height: 200px;
+      }
+      .twitter-img {
+        width: 50px;
+        height: 50px;
+      }
+      .pad {
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+      .btn {
+        height: 75px; 
+        width: 150px
+      }
+      .thead {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary ml-auto">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="logo.png" alt="Bootstrap">
+        </a>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutus.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="achievement.html">Achievement</a>
+          </li>
+        </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header>
+      <!--CAROUSEL-->
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="banner-left.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <button class="btn btn-dark" data-bs-target="#order" data-bs-toggle="modal">Order Now</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="banner-left.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <button class="btn btn-dark" data-bs-target="#order" data-bs-toggle="modal">Order Now</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="banner-left.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <button class="btn btn-dark" data-bs-target="#order" data-bs-toggle="modal">Order Now</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="banner-left.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <button class="btn btn-dark" data-bs-target="#order" data-bs-toggle="modal">Order Now</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="banner-left.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <button class="btn btn-dark" data-bs-target="#order" data-bs-toggle="modal">Order Now</button>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </header>
+
+    <div
+              class="modal fade"
+              id="order"
+              tabindex="-1"
+              aria-labelledby="LoginLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <table width="100%" class="table table-bordered" >
+                      <thead class="thead">
+                           <tr>
+                              <th class="plans-list"><h3>Plan Features</h3></th>
+                              <th class="plans-list"><h3>Basic</h3><h4>$5<small>/month</small></h4></th>
+                              <th class="plans-list"><h3>Economy</h3><h4>$9<small>/month</small></h4></th>
+                          </tr>
+                      </thead>
+                        <tfoot>
+                          <tr>
+                              <td> </td>
+                              <td class="order_now"><a href="index.html" class="scroll"><button>Order Now</button></a></td>
+                              <td class="order_now"><a href="index.html" class="scroll"><button>Order Now</button></a></td>
+                        </tr>
+                        </tfoot>				
+                         <tbody>
+                           <tr>
+                              <td class="plan_list_title">Web Space</td>
+                              <td class="price_body">Unlimited</td>
+                              <td class="price_body">Unlimited</td>
+                          </tr>
+                          <tr>
+                              <td class="plan_list_title">Bandwidth</td>
+                          <td class="price_body">Unlimited</td>
+                              <td class="price_body">Unlimited</td>
+                          </tr>
+                          <tr>
+                              <td class="plan_list_title">25 GB Storage</td>
+                              <td class="price_body"><img src="icon-remove.png" alt="img"></td>
+                              <td class="price_body">Unlimited</td>
+                        </tr>
+                          <tr>
+                              <td class="plan_list_title">iPhone App</td>
+                              <td class="price_body"><img src="icon-remove.png" alt="img"></td>
+                              <td class="price_body">Unlimited</td>
+                          </tr>
+                          <tr>
+                              <td class="plan_list_title">Enhanced Security</td>
+                              <td class="price_body"><img src="tickmark-icon.png" alt="img"></td>
+                              <td class="price_body"><img src="tickmark-icon.png" alt="img"></td>
+                          </tr>
+                          <tr>
+                              <td class="plan_list_title">E-mail</td>
+                              <td class="price_body"><img src="tickmark-icon.png" alt="img"></td>
+                              <td class="price_body"><img src="tickmark-icon.png" alt="img"></td>
+                          </tr>
+                          <tr>
+                              <td class="plan_list_title">Wordpress Support</td>
+                              <td class="price_body"><img src="icon-remove.png" alt="img"></td>
+                              <td class="price_body"><img src="tickmark-icon.png" alt="img"></td>
+                          </tr>
+                          <tr>
+                              <td class="plan_list_title">24/7 Support</td>
+                              <td class="price_body"><img src="tickmark-icon.png" alt="img"></td>
+                              <td class="price_body"><img src="tickmark-icon.png" alt="img"></td>
+                          </tr>
+                          <tr>
+                              <td class="plan_list_title">Backups</td>
+                            <td class="price_body"><img src="tickmark-icon.png" alt="img"></td>
+                              <td class="price_body"><img src="tickmark-icon.png" alt="img"></td>
+                          </tr>
+                          <tr>
+                              <td class="plan_list_title">Dedicated IP</td>
+                              <td class="price_body">$2/mo</td>
+                              <td class="price_body">$2/mo</td>
+                          </tr>
+                      </tbody></table>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+
+    <br>
+    <body>
+      <div class="container">
+        <h1 class="container-text"><strong>We Creative Quality Designs.</strong></h1>
+        <h4 class="container-text"><strong>We Specialize in Web Design / Development and Graphic Design</strong></h4>
+        <div class="row">
+          <div class="card col-md-2">
+            <img src="pic.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">REDESIGNING WITH PERSONALITY</h5>
+              <p class="card-text">In web design</p>
+            </div>
+          </div>
+          <div class="card col-md-2">
+            <img src="icon1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
+            </div>
+          </div>
+          <div class="card col-md-2">
+            <img src="icon2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
+            </div>
+          </div>
+          <div class="card col-md-2">
+            <img src="icon3.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container" style="padding-top: 50px;">
+        <h2  class="container-text"><strong>Our Work</strong></h2>
+        <h4  class="container-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</h4>
+        <div class="row">
+          <div class="col-md-2">
+            <img src="wallpaper.webp" class="card-img-top" alt="...">
+
+          </div>
+        </div>
+      </div>
+
+      <div class="container" style="padding-top: 50px;">
+        <h2  class="container-text"><strong>Our Clients</strong></h2>
+        <h4  class="container-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</h4>
+      </div>
+    </body>
+
+    <footer style="background-color: grey; padding: 30px;">
+      <div class="footer-top">
+        <div class="row">
+          <div class="col-md-4">
+            <h3>About Us</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+              <button class="btn1 btn-8 btn-8b">Learn more</button>
+              <br><br>
+              <h4>Photo Stream</h4>
+
+              <div class="gallery">
+                <ul>
+                  <a class="popup-with-zoom-anim" href="#"><img class="footer-img" src="wallpaper.webp" class="card-img-top" alt="..."></a>
+                  <a class="popup-with-zoom-anim" href="#"><img class="footer-img" src="wallpaper.webp" class="card-img-top" alt="..."></a>
+                  <a class="popup-with-zoom-anim" href="#"><img class="footer-img" src="wallpaper.webp" class="card-img-top" alt="..."></a>
+                  <a class="popup-with-zoom-anim" href="#"><img class="footer-img" src="wallpaper.webp" class="card-img-top" alt="..."></a>
+                  <a class="popup-with-zoom-anim" href="#"><img class="footer-img" src="wallpaper.webp" class="card-img-top" alt="..."></a>
+                  <a class="popup-with-zoom-anim" href="#"><img class="footer-img" src="wallpaper.webp" class="card-img-top" alt="..."></a>
+                </ul>
+              </div>
+          </div>
+
+          <div class="col-md-4">
+            <h3>Latest tweets</h3>
+            <ul>
+              <div class="row pad">
+                <div class="col-md-2"><img class="twitter-img" src="twitter.png" alt=""></div>
+                <div class="col-md-10"><p>Lorem ipsum <span class="yellow"><a href="https://fpwebdevelopment.netlify.app/#">consectetuer</a></span> adipiscing elit, seddia<br><span class="small">&nbsp;web design</span></p><div class="clear"></div></div>
+              </div>
+
+              <div class="row pad">
+                <div class="col-md-2"><img class="twitter-img" src="twitter.png" alt=""></div>
+                <div class="col-md-10"><p>Lorem ipsum <span class="yellow"><a href="https://fpwebdevelopment.netlify.app/#">consectetuer</a></span> adipiscing elit, seddia<br><span class="small">&nbsp;web design</span></p><div class="clear"></div></div>
+              </div>
+              
+              <div class="row pad">
+                <div class="col-md-2"><img class="twitter-img" src="twitter.png" alt=""></div>
+                <div class="col-md-10"><p>Lorem ipsum dolor sit amet, <span class="yellow"><a href="https://fpwebdevelopment.netlify.app/#">consectetuer</a></span> adipiscing elit, sed diam nonummy nibh<br><span class="small">&nbsp;web design</span></p><div class="clear"></div></div>
+              </div>
+
+              <div class="row pad">
+                <div class="col-md-2"><img class="twitter-img" src="twitter.png" alt=""></div>
+                <div class="col-md-10"><p>Lorem ipsum dolor sit amet, <span class="yellow"><a href="https://fpwebdevelopment.netlify.app/#">consectetuer</a></span> adipiscing elit, sed diam nonummy nibh<br><span class="small">&nbsp;web design</span></p><div class="clear"></div></div>
+              </div>
+							
+              <div class="row pad">
+                <div class="col-md-2"><img class="twitter-img" src="twitter.png" alt=""></div>
+                <div class="col-md-10"><p>Lorem ipsum <span class="yellow"><a href="https://fpwebdevelopment.netlify.app/#">consectetuer</a></span> adipiscing elit, seddia<br><span class="small">&nbsp;web design</span></p><div class="clear"></div></div>
+              </div>
+
+						</ul>
+            <br>
+            <h3>Social Connecting</h3>
+          </div>
+
+          <div class="col-md-4">
+            <h3>Contact info</h3>
+					<div class="footer-list">
+						<ul>
+              <div class="row pad">
+                <div class="col-md-2"><img class="twitter-img" src="twitter.png" alt=""></div>
+                <div class="col-md-10"><p>Lorem ipsum dolor sit amet,consectetuer adipiscing elit, sed diam nonummy nibh<br>&nbsp;web design</p><div class="clear"></div></div>
+              </div>
+
+              <div class="row pad">
+                <div class="col-md-2"><img class="twitter-img" src="twitter.png" alt=""></div>
+                <div class="col-md-10"><p>Phone: +1 800 258 2689<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+1 800 258 2689 </p><div class="clear"></div></div>
+              </div>
+
+              <div class="row pad">
+                <div class="col-md-2"><img class="twitter-img" src="twitter.png" alt=""></div>
+                <div class="col-md-10"><p>Email: <span class="yellow"><a href="https://fpwebdevelopment.netlify.app/#">info(at)skokov.com</a></span></p><div class="clear"></div></div>
+              </div>
+					   </ul>
+					</div>
+					<div class="follow">
+					   <h4>Follow Us</h4>
+					   <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
+					   <div class="search">
+						  <form>
+							   <input type="text" value="">
+							   <input type="submit" value="">
+						  </form>
+					   </div>
+				    </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
